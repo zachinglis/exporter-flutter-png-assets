@@ -1,7 +1,7 @@
 {
-    "id": "io.supernova.flutter-svg-assets",
+    "id": "io.supernova.flutter-png-assets",
     "name": "Flutter Assets",
-    "description": "Flutter SVG Asset Exporter",
+    "description": "Flutter PNG Asset Exporter",
     "author": "Jiri Trecak",
     "organization": "Supernova",
     "homepage": "https://supernova.io",
