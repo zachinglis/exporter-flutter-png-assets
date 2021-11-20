@@ -1,0 +1,26 @@
+{[ let extension = asset.format /]}
+{[ let folder = "" /]}
+
+{[ switch asset.scale ]}
+    {[ case "x1" ]}
+        {[ folder = "" /]}
+    {[ case "x2" ]}
+        {[ folder = "2.0x/" /]}
+    {[ case "x3" ]}
+        {[ folder = "3.0x/" /]}
+{[/]}
+
+{* Generate name as [originalName][-numberOfDuplicates][extension] *}
+{[ let duplicateExtension = (asset.previouslyDuplicatedNames > 0 ? ("_" + asset.previouslyDuplicatedNames) : "") /]}
+{[ let name = (asset.originalName.lowercased().replacing(" ", "_") + duplicateExtension + "." + asset.format) /]}
+
+{* Generate path from segments *}
+{[ let path = (asset.group.path.append(asset.group.name).join("/").replacing(" ", "_").lowercased()) /]}
+{[ log path /]}
+
+{* Retrieve asset path *}
+{[ if (path.count() > 0) ]}
+    {{ path + "/" }}{{ folder }}{{ name }}
+{[ else ]}
+    {{ folder }}{{ name }}
+{[/]}
