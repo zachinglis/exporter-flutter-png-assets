@@ -1,6 +1,7 @@
 {[ let extension = asset.format /]}
 {[ let folder = "" /]}
 
+{* Create directory definition to which the icons will be written based on the scale *}
 {[ switch asset.scale ]}
     {[ case "x1" ]}
         {[ folder = "" /]}
