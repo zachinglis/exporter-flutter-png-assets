@@ -16,7 +16,7 @@
 {[ let name = (asset.originalName.lowercased().replacing(" ", "_") + duplicateExtension + "." + asset.format) /]}
 
 {* Generate path from segments *}
-{[ let path = (asset.group.path.append(asset.group.name).join("/").replacing(" ", "_").lowercased()) /]}
+{[ let path = (asset.group.path.append(asset.group.name).join("/").replacing(" ", "_").replacing("-", "_").lowercased()) /]}
 {[ log path /]}
 
 {* Retrieve asset path *}
