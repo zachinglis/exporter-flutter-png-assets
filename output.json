@@ -2,18 +2,29 @@
     "blueprints": [],
     "assets": [{
         "write_using": "asset_path_flutter.pr",
-        "scale": "1x",
+        "scale": "8w",
         "format": "png",
         "type": "image"
     }, {
         "write_using": "asset_path_flutter.pr",
-        "scale": "2x",
+        "scale": "15w",
         "format": "png",
         "type": "image"
     }, {
         "write_using": "asset_path_flutter.pr",
-        "scale": "3x",
+        "scale": "25w",
         "format": "png",
         "type": "image"
-    }]
+    }, {
+        "write_using": "asset_path_flutter.pr",
+        "scale": "34w",
+        "format": "png",
+        "type": "image"
+    }, {
+        "write_using": "asset_path_flutter.pr",
+        "scale": "50w",
+        "format": "png",
+        "type": "image"
+    }
+              ]
 }
